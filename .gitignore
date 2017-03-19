@@ -1,5 +1,11 @@
 node_modules
+
 *.log
+
 *.lock
+
 .gitignore
+
 webpack.config.js
+
+.vscode/

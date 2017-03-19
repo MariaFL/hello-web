@@ -1,3 +1,90 @@
-body 
-	font-size 3em
-	color red
+html,
+body
+  width 100%
+  height 100%
+  font-size 15px
+  color #666666
+
+body
+  margin 0
+  font-family "Arial", sans-serif
+
+.page
+  margin-top 0
+  margin-bottom 0
+  margin-left auto
+  margin-right auto
+  width 1500px
+
+.before-header
+  padding 0
+  width 100%
+  height 70px
+
+.menu-btn
+  display block
+  position relative
+  width 60px
+  height 100%
+  float right
+
+  span
+    display block
+    position absolute
+    top 30px
+    left 15px
+    width 30px
+    height 5px
+    background-color #666666
+    border-radius 20px
+
+  span:before
+    display block
+    position absolute
+    top -10px
+    width 30px
+    height 5px
+    background-color #666666
+    border-radius 20px
+    content ""
+
+  span:after
+    display block
+    position absolute
+    top 10px
+    width 30px
+    height 5px
+    background-color #666666
+    border-radius 20px
+    content ""
+
+.menu-btn:hover
+  background-color #E0E0E0
+
+.title
+  margin-top 10px
+  margin-bottom 10px
+  text-align center
+  font-size 36px
+.header
+  p
+    margin-top 20px
+    text-align center
+    font-weight bold
+  
+  .toggle
+    margin-top 40px
+    text-align center
+
+  .btn-toggle
+    display inline-block
+    padding 10px 20px 10px 20px
+    color white
+    font-weight bold
+    text-decoration none
+    background-color #666666
+
+  .btn-toggle:hover
+    color #666666
+    font-weight normal
+    background-color #E0E0E0

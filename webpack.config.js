@@ -9,6 +9,7 @@ module.exports = {
     entry: {
       //для каждого файла нужна такая строчка где index имя выходного файла
         index: './src/styl/index.styl',
+        menu: './src/styl/menu.styl'
     },
 
   // вывод фалов после процессинга
