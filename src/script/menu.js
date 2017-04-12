@@ -1,19 +1,22 @@
 'use strict'
 
 
-var btnMenu = document.getElementsByClassName('menu-btn')[0],
-    btnExitMenu = document.getElementsByClassName('exit-btn')[0],
-    menu = document.getElementsByClassName('page-menu')[0];
+var btnMenu = document.querySelector('#menu-btn'),
+    btnExitMenu = document.querySelector('#exit-btn'),
+    menu = document.querySelector('.page-menu');
 
-
-
-
-btnExitMenu.onclick = function hideMenu(event) {
-    menu.style.display = 'none';
+function toggle(event) {
+    menu.classList.toggle('active');
 }
 
-btnMenu.onclick = function showMenu(event) {
-    menu.style.display = 'block';
-    
-}
+
+btnExitMenu.addEventListener("click", function hideMenu(event) {
+    event.preventDefault();
+    menu.classList.toggle('page-menu-active');
+});
+
+btnMenu.addEventListener("click", function (event) {
+    event.preventDefault();
+    menu.classList.toggle('page-menu-active');
+});
 
